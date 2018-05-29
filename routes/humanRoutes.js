@@ -4,7 +4,7 @@ var humanController = require('../controllers/humanController');
 var humanModel = require('../models/human');
 
 router.get('/', (res, req, next) =>{
-  giftCertificateController.search({}, (err, result) =>{
+  humanController.search({}, (err, result) =>{
     var respond = {data: result};
       res.send(respond);
   });
